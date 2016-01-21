@@ -337,7 +337,7 @@
 <!--    <input type="text" name="name" />введите имя<br>-->
 <!--    <input type="text" name="password" />введите пароль<br>-->
 <!--    <input type="text" name="email" />введите почьтовый ящик<br>-->
-<!--    <input type="submit" name="form"/>-->
+<!--    <input type="submit" />-->
 <!--</form>-->
 <!---->
 <!---->
@@ -366,4 +366,39 @@
 //
 //}
 //?>
+
+
+<?php
+//$a = 1;
+//$b = 2;
+//$c = 3;
+//
+//
+//if (isset($_POST['bottom1'])) {
+//    $a = 2;
+//    $b = 1;
+//    $c = 3;
+//}
+//if (isset($_POST['bottom2'])) {
+//    $a = 3;
+//    $b = 2;
+//    $c = 1;
+//}
+//if (isset($_POST['bottom3'])) {
+//        $a = 1;
+//        $b = 2;
+//        $c = 3;
+//    }
+//
+//?>
+<!--Cоздать 3 кнопки с названиями 1, 2, 3, расположенные друг над другом.<br/>-->
+<!--При нажатии на любую кнопку порядок меняется на 2, 1, 3.<br/>-->
+<!--Затем при нажатии на любую кнопку порядок меняется на 3, 2, 1.<br/>-->
+<!--Затем при нажатии на любую кнопку порядок меняется на 1, 2, 3. И так далее.<br/>-->
+<!---->
+<!--<form method="post">-->
+<!--    <input type = "submit" name="bottom1" value = "--><?php //echo $a;?><!--"><br>-->
+<!--    <input type = "submit" name="bottom2" value = "--><?php //echo $b;?><!--"><br>-->
+<!--    <input type = "submit" name="bottom3" value = "--><?php //echo $c;?><!--"><br>-->
+<!--</form name="form">-->
 
