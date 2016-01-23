@@ -550,3 +550,132 @@
 //    echo "Введите все поля";
 //}
 //?>
+
+
+
+<!--Пользователь указывает цвет и размер трех кругов.<br>-->
+<!--Вывести их в случайных местах в браузере.<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title></title>-->
+<!--    <style>-->
+<!--        .layer1 {-->
+<!--            padding: 10px;-->
+<!--            margin-right: 20px;-->
+<!--            float: left;-->
+<!--        }-->
+<!--    </style>-->
+<!--    --><?php
+//    $arr = array('Красный'=>'Red', 'Оранжевый'=>'Orange', 'Желтый'=>'Yellow',
+//        'Зеленый'=>'Green', 'Голубой'=>'Blue', 'Синий'=>'Indigo', 'Фиолетовый'=>'Violet');
+//
+//    ?>
+<!--</head>-->
+<!--<body>-->
+<!--<div class="layer1">-->
+<!--<form method="post">-->
+<!--    <input type="text" name="one" placeholder="размер первого круга"><br>-->
+<!--    <input type="text" name="color1" placeholder="цвет"><br>-->
+<!--    <br>-->
+<!--    <input type="text" name="two" placeholder="размер второго круга"><br>-->
+<!--    <input type="text" name="color2" placeholder="цвет"><br>-->
+<!--    <br>-->
+<!--    <input type="text" name="free" placeholder="размер третьего круга"><br>-->
+<!--    <input type="text" name="color3" placeholder="цвет"><br>-->
+<!--    <br>-->
+<!--    <input type="submit"><br>-->
+<!--</form>-->
+<!--</div>-->
+<!---->
+<!--<div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--<div>-->
+<!--    <p><b>Список цветов:</b>-->
+<!--    --><?php
+//    foreach ($arr as $key=>$colors){
+//        echo "| <i style=\"color: $colors; \">$key</i> |";
+//    }
+//
+//    ?><!--</p>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--<div>-->
+<!--    --><?php
+//    if (empty($_POST)){
+//        echo "Данных нет";
+//
+//    }else {
+//
+//        $one = trim($_POST['one']);
+//        $two = trim($_POST['two']);
+//        $free = trim($_POST['free']);
+//        $color1 = trim($_POST['color1']);
+//        $color2 = trim($_POST['color2']);
+//        $color3 = trim($_POST['color3']);
+//        $y = rand(1, 900);
+//        $z = rand(1, 900);
+//        $a = rand(1, 900);
+//        $b = rand(1, 900);
+//        if (is_numeric($_POST['one'])&&isset($_POST['color1'])){
+//            if (array_key_exists($color1,$arr)){
+//                foreach ($arr as $key=>$colors){
+//                    if ($key==$color1){
+//                        echo "<div style=\"left:$y; top:$z; width:$one; height:$one; background:$colors; border-radius:$one;\"></div><br>";
+//                    }
+//                }
+//            }else {
+//                echo "Ошибка ! такого цвета как <b>$color1</b> нет в нашем проекте<br>";
+//            }
+//        }else {
+//            echo "Ошибка ! размер первого круга и цвет не указаны<br>";
+//        }
+//        if (is_numeric($_POST['two'])&&isset($_POST['color2'])){
+//            if (array_key_exists($color2,$arr)){
+//                foreach ($arr as $key=>$colors){
+//                    if ($key==$color2){
+//                        echo "<div style=\"left:$a; top:$b; width:$two; height:$two; background:$colors; border-radius:$two;\"></div><br>";
+//                    }
+//                }
+//            }else {
+//                echo "Ошибка ! такого цвета как <b>$color2</b> нет в нашем проекте<br>";
+//            }
+//        }else {
+//            echo "Ошибка ! размер второго круга и цвет не указаны<br>";
+//        }
+//        if (is_numeric($_POST['free'])&&isset($_POST['color3'])){
+//            if (array_key_exists($color3,$arr)){
+//                foreach ($arr as $key=>$colors){
+//                    if ($key==$color3){
+//                        echo "<div style=\"left:$z; top:$a; width:$free; height:$free; background:$colors; border-radius:$free;\"></div><br>";
+//                    }
+//                }
+//            }else {
+//                echo "Ошибка ! такого цвета как <b >$color3</b> нет в нашем проекте<br>";
+//            }
+//        }else {
+//            echo "Ошибка ! размер третьего круга и цвет не указаны<br>";
+//        }
+//    }
+//    ?>
+<!--</div>-->
+<!---->
+<!--</body>-->
+<!--</html>-->
+
+
+Выясните, можно ли с шахматного поля (k,p) одним ходом ферзя попасть на поле (m,n).<br>
+Если нет, то сообщите, как это можно сделать за два хода.<br>
+Решение отобразить на странице в виде черно-белой шахматной доски с двумя(тремя)<br>
+клетками красного цвета и с номерами ходов в этих клетках.<br>
+<br>
+<br>
+<br>
+<br>
+
